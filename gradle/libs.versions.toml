@@ -1,17 +1,23 @@
 [versions]
-agp = "8.8.0"
+agp = "8.8.2"
 cameraCore = "1.4.2"
 faceDetection = "16.1.7"
-kotlin = "1.9.24"
+kotlin = "2.0.0"
 coreKtx = "1.15.0"
 appcompat = "1.7.0"
 material = "1.12.0"
 activity = "1.10.1"
 constraintlayout = "2.2.1"
 onnxruntimeAndroid = "1.16.3"
+
 tensorflowLite = "2.16.1"
-tensorflowLiteGpu = "2.2.0"
+tensorflowLiteGpu = "2.14.0"
 tensorflowLiteSupport = "0.4.4"
+
+tinyOpencv = "4.4.0-4"
+exifinterface = "1.4.0"
+kpermissions = "3.3.0"
+compressor = "3.0.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -31,6 +37,11 @@ face-detection = { module = "com.google.mlkit:face-detection", version.ref = "fa
 tensorflow-lite = { module = "org.tensorflow:tensorflow-lite", version.ref = "tensorflowLite" }
 tensorflow-lite-gpu = { module = "org.tensorflow:tensorflow-lite-gpu", version.ref = "tensorflowLiteGpu" }
 tensorflow-lite-support = { module = "org.tensorflow:tensorflow-lite-support", version.ref = "tensorflowLiteSupport" }
+
+tiny-opencv = { module = "com.github.zynkware:Tiny-OpenCV", version.ref = "tinyOpencv" }
+kpermissions = { module = "com.github.fondesa:kpermissions", version.ref = "kpermissions" }
+androidx-exifinterface = { module = "androidx.exifinterface:exifinterface", version.ref = "exifinterface" }
+compressor = { module = "id.zelory:compressor", version.ref = "compressor" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

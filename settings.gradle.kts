@@ -1,5 +1,8 @@
 import java.net.URI
 
+include(":DocumentReaderSdk")
+
+
 pluginManagement {
     repositories {
         google {
