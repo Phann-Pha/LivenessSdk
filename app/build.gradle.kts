@@ -36,7 +36,9 @@ android {
 }
 
 dependencies {
+    
     implementation(project(":FaceLivenessSdk"))
+    implementation(project(":DocumentReaderSdk"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

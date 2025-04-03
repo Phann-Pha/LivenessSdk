@@ -1,8 +1,5 @@
 import java.net.URI
 
-include(":DocumentReaderSdk")
-
-
 pluginManagement {
     repositories {
         google {
@@ -26,5 +23,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "FaceLivenessSdk"
-include(":app")
-include(":FaceLivenessSdk")
+include(":app", ":FaceLivenessSdk", ":DocumentReaderSdk")

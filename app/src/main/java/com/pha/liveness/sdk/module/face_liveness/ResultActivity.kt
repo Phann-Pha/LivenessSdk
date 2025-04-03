@@ -1,4 +1,4 @@
-package com.pha.liveness.sdk
+package com.pha.liveness.sdk.module.face_liveness
 
 import android.app.Activity
 import android.content.Intent
@@ -8,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.pha.liveness.face.liveness.sdk.util.BitmapUtils
+import com.pha.liveness.sdk.R
 import com.pha.liveness.sdk.databinding.ActivityResultBinding
 import java.io.File
 
@@ -49,7 +50,7 @@ class ResultActivity : AppCompatActivity()
     private fun onInitEventClickListener()
     {
         binding.btnRetry.setOnClickListener {
-            startActivity(Intent(activity, MainActivity::class.java))
+            startActivity(Intent(activity, FaceLivenessActivity::class.java))
             finish()
         }
     }

@@ -1,4 +1,4 @@
-package com.pha.liveness.sdk
+package com.pha.liveness.sdk.module.face_liveness
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -15,13 +15,14 @@ import com.pha.liveness.face.liveness.sdk.task.LeftMoveDetectionTask
 import com.pha.liveness.face.liveness.sdk.task.RightMoveDetectionTask
 import com.pha.liveness.face.liveness.sdk.task.SmilingDetectionTask
 import com.pha.liveness.face.liveness.sdk.util.CameraPermissionUtil
-import com.pha.liveness.sdk.databinding.ActivityMainBinding
+import com.pha.liveness.sdk.R
+import com.pha.liveness.sdk.databinding.ActivityFaceLivenessBinding
 import java.io.File
 
-class MainActivity : AppCompatActivity()
+class FaceLivenessActivity : AppCompatActivity()
 {
     private lateinit var activity: Activity
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityFaceLivenessBinding
     private lateinit var cameraManager: CameraManager
     
     override fun onCreate(savedInstanceState: Bundle?)
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity()
         super.onCreate(savedInstanceState)
         activity = this
         enableEdgeToEdge()
-        binding = DataBindingUtil.setContentView(activity, R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(activity, R.layout.activity_face_liveness)
         
         onInitCameraManager()
     }
