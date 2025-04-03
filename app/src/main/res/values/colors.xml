@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="dot_detection_layer">#ffffffff</color>
+    <color name="dot_instruction_background">#fff8fbfb</color>
+    <color name="dot_instruction_candidate_selection_background">#ff00bfb2</color>
+    <color name="dot_instruction_candidate_selection_text">#ff131313</color>
+    <color name="dot_instruction_text">#ff131313</color>
+    <color name="dot_placeholder">#ffffffff</color>
+    <color name="dot_placeholder_candidate_selection">#ff00bfb2</color>
+    <color name="dot_placeholder_overlay">#80131313</color>
+    <style name="TextAppearance.Dot.Medium" parent="TextAppearance.AppCompat.Medium"/>
+    <style name="TextAppearance.Dot.Medium.Instruction">
+        <item name="android:background">@drawable/instruction_background</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">@color/dot_instruction_text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

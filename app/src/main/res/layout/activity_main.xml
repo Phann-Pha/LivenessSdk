@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/preview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/top"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#CC121212"
+            app:layout_constraintBottom_toTopOf="@id/shape"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/bottom"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#CC121212"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shape" />
+
+        <View
+            android:id="@+id/start"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#CC121212"
+            app:layout_constraintBottom_toTopOf="@id/bottom"
+            app:layout_constraintEnd_toStartOf="@id/shape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top" />
+
+        <View
+            android:id="@+id/end"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#CC121212"
+            app:layout_constraintBottom_toTopOf="@id/bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/shape"
+            app:layout_constraintTop_toBottomOf="@id/top" />
+
+        <View
+            android:id="@+id/shape"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_shape_overlay"
+            android:backgroundTint="#CC121212"
+            app:layout_constraintBottom_toBottomOf="@id/instruction_anchor"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@id/instruction_anchor"
+            app:layout_constraintStart_toStartOf="@id/instruction_anchor"
+            app:layout_constraintTop_toTopOf="@id/instruction_anchor" />
+
+        <View
+            android:id="@+id/circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/circle_shape_overlay"
+            app:layout_constraintBottom_toBottomOf="@id/instruction_anchor"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@id/instruction_anchor"
+            app:layout_constraintStart_toStartOf="@id/instruction_anchor"
+            app:layout_constraintTop_toTopOf="@id/instruction_anchor" />
+
+        <View
+            android:id="@+id/instruction_anchor"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="64dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_instruction"
+            android:padding="10dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@id/instruction_anchor"
+            app:layout_constraintStart_toStartOf="@id/instruction_anchor"
+            app:layout_constraintTop_toBottomOf="@id/instruction_anchor" />
+
+        <ProgressBar
+            android:id="@+id/progressingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/instruction_anchor"
+            app:layout_constraintEnd_toEndOf="@id/instruction_anchor"
+            app:layout_constraintStart_toStartOf="@id/instruction_anchor"
+            app:layout_constraintTop_toTopOf="@id/instruction_anchor" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

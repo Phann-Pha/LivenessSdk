@@ -1,0 +1,14 @@
+package com.pha.liveness.face.liveness.sdk.core.util
+
+object DetectionConstance
+{
+    const val DETECTION = "DETECTION"
+    const val FACING_DETECTION = "FACING_DETECTION"
+    const val SMILE_DETECTION = "SMILE_DETECTION"
+    const val BLINK_EYES_DETECTION = "BLINK_EYES_DETECTION"
+
+    const val MOVEMENT_LEFT_DETECTION = "MOVEMENT_LEFT_DETECTION"
+    const val MOVEMENT_RIGHT_DETECTION = "MOVEMENT_RIGHT_DETECTION"
+    const val MOVEMENT_TOP_DETECTION = "MOVEMENT_TOP_DETECTION"
+    const val MOVEMENT_BOTTOM_DETECTION = "MOVEMENT_BOTTOM_DETECTION"
+}
